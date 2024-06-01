@@ -1,0 +1,373 @@
+#heading-text-red {
+    text-transform: uppercase;
+    padding-bottom: 2%;
+    color: #FF3147"
+
+}
+
+#sub-heading-text-black {
+    text-transform: uppercase;
+    padding-bottom: 2%;
+    font-weight: bolder;
+}
+
+/* Modal overlay */
+.modal-overlay {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal {
+    width: 450px;
+    height: 362px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    position: fixed;
+    z-index: 1001;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="checkbox"] {
+    width: 48%;
+    /* Adjust width as needed */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+
+
+.contact-bt {
+    background: #FF3147 0% 0% no-repeat padding-box;
+    border-radius: 2px;
+    width: 160px;
+    height: 50px;
+}
+
+.s2 {
+    background: #FAFAFA 0% 0% no-repeat padding-box;
+    height: 1000px;
+}
+
+.s2-content {
+    padding-top: 5%;
+    text-align: start;
+    margin-left: 4%;
+    max-width: 73%;
+    padding-bottom: 30px;
+    /* Adjust as needed to keep the content within view */
+}
+
+.s2-content h1 {
+    font-weight: bold;
+    font-size: 45px;
+}
+
+.s2-content p {
+    word-wrap: break-word;
+    hyphens: auto;
+}
+
+.outer-container {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.services-container {
+    display: flex;
+    gap: 30px;
+    margin-left: 4%;
+}
+
+.services-card {
+    width: 370px;
+    height: 526px;
+    /* background-color: aqua; */
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    /* Adjust spacing between elements */
+}
+
+.card-content img {
+    max-width: 100%;
+}
+
+
+.read-more-bt {
+    background-color: aliceblue;
+    color: #FF3147;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.dot-row {
+    display: flex;
+    justify-content: start;
+    margin-left: 4%;
+    margin-top: 2%;
+    /* Center the dots horizontally */
+    gap: 10px;
+    /* Adjust spacing between dots */
+    padding-top: 14px;
+    /* Add padding at the top as needed */
+}
+
+.dot-row div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* S3 */
+.s3 {
+    overflow-x: hidden;
+    padding-right: 3%;
+    padding-bottom: 5%;
+}
+
+.s3-heading {
+    padding-top: 5%;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.s3-below-head {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    margin-left: 4%;
+}
+
+.s3-element {
+    text-align: left;
+    padding: 5px;
+}
+
+.s3-element img {
+    max-width: 100%;
+    height: auto;
+}
+
+.element-title {
+    font-weight: bolder;
+    letter-spacing: 0px;
+    margin-top: 10px;
+}
+
+.element-description {
+    font-weight: normal;
+    letter-spacing: 0px;
+    margin-top: 5px;
+}
+
+/* S4 */
+
+.s4 {
+    padding-bottom: 5%;
+}
+
+.s4-below-head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    /* Add some spacing between the image and the card */
+    padding: 20px;
+}
+
+.s4-card {
+    width: 300px;
+    height: 567px;
+    /* 189px * 3 sections */
+    background: #F6F6F6 0% 0% no-repeat padding-box;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    /* No gap between sections */
+}
+
+.s4-card-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    border-bottom: 1px solid #e0e0e0;
+    /* Add border to separate sections */
+}
+
+.s4-card-section:last-child {
+    border-bottom: none;
+    /* Remove border from the last section */
+}
+
+.card-text-bold {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.card-text-normal {
+    font-weight: normal;
+    text-align: left;
+}
+
+/* S5 */
+
+.s5 {
+    background: #FAFAFA 0% 0% no-repeat padding-box;
+    padding-bottom: 5%;
+    height: auto;
+}
+
+.s5-below-head {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    /* Adjust gap between cards as needed */
+    padding: 20px;
+}
+
+.s5-card {
+    width: 200px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 3px 6px 20px #672C2C1F;
+    /* background: #F6F6F6 0% 0% no-repeat padding-box; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.s5-card img {
+    width: 50px;
+    /* Adjust icon size as needed */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.card-number {
+    font-size: 36px;
+    /* Large text for "199 +" */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 16px;
+    /* Normal text for "Satisfied customers" */
+    font-weight: normal;
+}
+
+/* S6 */
+
+.s6 {
+    padding-bottom: 6%;
+    height: auto;
+}
+
+.s6-below-head {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    position: relative;
+}
+
+.quote-section {
+    width: 831px;
+    height: 63px;
+    text-align: left;
+}
+
+.watermark-img {
+    position: absolute;
+    top: 0;
+    left: 20%;
+    top: 60%;
+    z-index: -1;
+}
+
+.quote-text {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-top: 60px;
+    /* Add space to position text below watermark */
+    padding: 0 20px;
+}
+
+.quote-author {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.author-name {
+    font-weight: bold;
+}
+
+.author-title {
+    font-weight: normal;
+}
+
+/* S7 */
+
+.s7 {
+    padding-bottom: 5%;
+    height: 200px;
+    background: transparent url('./images/NoPath\ -\ Copy.png') 0% 0% no-repeat padding-box;
+    background-color: #FF3147;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.s7-imgs {
+    width: 1170px;
+    height: 56px;
+    margin-top: 6%;
+    background: transparent url('./images/Group 500.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
