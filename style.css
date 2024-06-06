@@ -129,20 +129,21 @@ input[type="checkbox"] {
 }
 
 .outer-container {
-    overflow-x: hidden;
+    overflow: hidden;
     width: 100%;
+    position: relative;
 }
 
 .services-container {
     display: flex;
     gap: 30px;
-    margin-left: 4%;
+    width: max-content;
+    animation: scroll 10s linear infinite;
 }
 
 .services-card {
     width: 370px;
     height: 526px;
-    /* background-color: aqua; */
     flex-shrink: 0;
     display: flex;
     justify-content: center;
@@ -157,13 +158,11 @@ input[type="checkbox"] {
     align-items: center;
     justify-content: center;
     gap: 15px;
-    /* Adjust spacing between elements */
 }
 
 .card-content img {
     max-width: 100%;
 }
-
 
 .read-more-bt {
     background-color: aliceblue;
@@ -173,6 +172,17 @@ input[type="checkbox"] {
     padding: 10px 20px;
     cursor: pointer;
     text-transform: uppercase;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-calc(370px * 4 + 30px * 3));
+        /* Width of all cards plus gaps */
+    }
 }
 
 .dot-row {
