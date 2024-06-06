@@ -47,29 +47,34 @@
     <!-- Modal Structure -->
     <div id="modal-overlay" class="modal-overlay">
         <div id="modal" class="modal">
-            <h2>Talk to us</h2>
-            <div class="form-group">
-                <label for="femail">Work email</label>
-                <input type="email" id="femail" name="femail" class="modal-email">
-            </div>
-            <div class="form-group" style="flex-direction: row; gap: 12px;">
+            <form id="contact-form" action="https://getform.io/f/paqgjqla" method="POST">
+                <h2>Talk to us</h2>
                 <div class="form-group">
-                    <label for="fname">First name</label>
-                    <input type="text" id="fname" name="fname">
+                    <label for="femail">Work email</label>
+                    <input type="email" id="femail" type="email" name="email" class="modal-email">
                 </div>
-                <div class="form-group">
-                    <label for="lname">Last name</label>
-                    <input type="text" id="lname" name="lname">
+                <div class="form-group" style="flex-direction: row; gap: 12px;">
+                    <div class="form-group">
+                        <label for="fname">First name</label>
+                        <input type="text" id="fname" type="text" name="fname">
+                    </div>
+                    <div class="form-group">
+                        <label for="lname">Last name</label>
+                        <input type="text" id="lname" type="text" name="lname">
+                    </div>
                 </div>
-            </div>
-            <div class="form-group" style="flex-direction: row;">
-                <div>
-                    <input type="checkbox" id="agree" name="agree">
+                <div class="form-group" style="flex-direction: row;">
+                    <div>
+                        <input type="checkbox" id="agree" name="agree">
+                    </div>
+                    <div for="agree" class="agree">I agree to Fyle's terms and conditions, and provide consent to send
+                        me
+                        communication.</div>
                 </div>
-                <div for="agree" class="agree">I agree to Fyle's terms and conditions, and provide consent to send me
-                    communication.</div>
-            </div>
-            <button id="submit-contact" style="width: 100%;" class="contact-bt">Contact</button>
+                <span id="error-message" style="color: red; display: none;">You must agree to the terms and
+                    conditions.</span>
+                <button id="submit-contact" style="width: 100%;" type="submit" class="contact-bt">Contact</button>
+            </form>
         </div>
     </div>
 
@@ -112,9 +117,10 @@
                             </p>
                         </div>
                         <div class="row justify-content-center align-items-center">
-                            <button class="read-more-bt">READ MORE
+                            <a class="read-more-bt" style="text-decoration: none;" href="https://www.fylehq.com/"
+                                target="_blank">READ MORE
                                 <img src="./images/arrow.svg" alt="">
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </div>
